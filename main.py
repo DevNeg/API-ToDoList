@@ -47,7 +47,7 @@ def alter(id:int):
         tasks_list[id].situation = not tasks_list[id].situation
         return {'status':f'The task situation is {tasks_list[id].situation}'}
     except:
-        return{'status':'error'}
+        return{'status':'The id does not exist, please repeat'}
 
 
 
